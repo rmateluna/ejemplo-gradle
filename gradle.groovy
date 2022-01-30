@@ -25,7 +25,7 @@ def call(){
     }
     stage("Paso 4: Subir Nexus"){
         nexusPublisher nexusInstanceId: 'nexus',
-                nexusRepositoryId: 'maven-nexus-repo',
+                nexusRepositoryId: 'devops-usach-nexus',
                 packages: [[
                     $class: 'MavenPackage',
                     mavenAssetList: [[
